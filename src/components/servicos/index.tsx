@@ -1,6 +1,6 @@
 import { Container, Servicolist, ImagesWrapper, Title, ServicesContainer } from "./style";
 import fachada from '../../assets/fachada.jpg' 
-import torno from '../../assets/torno.png'
+
 
 export default function Servicos() {
     return(
