@@ -50,7 +50,7 @@ export const HeaderContent = styled.div`
     
     @media (max-width: 480px) {
         gap: 8px;
-        flex-direction: column;
+        display: flex;
     }
 `
 
