@@ -55,7 +55,6 @@ export const Title = styled.p`
         line-height: 40px;
         margin-left: 15px;
         margin-bottom: 20px;
-        text-align: center;
     }
     
     @media (max-width: 480px) {

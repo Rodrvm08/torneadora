@@ -23,7 +23,6 @@ export const Container = styled.div`
     @media (max-width: 768px) {
         flex-direction: column;
         gap: 20px;
-        align-items: center;
         padding: 15px 0;
         
         iframe {
@@ -57,7 +56,6 @@ export const Texto = styled.p`
         font-size: 36px;
         line-height: 40px;
         margin-left: 15px;
-        text-align: center;
     }
     
     @media (max-width: 480px) {

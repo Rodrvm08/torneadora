@@ -33,7 +33,6 @@ export const Info = styled.p`
         font-size: 28px;
         line-height: 32px;
         margin-left: 10px;
-        text-align: center;
     }
 `
 export const Telefone = styled.li`
@@ -67,9 +66,9 @@ export const ContactSection = styled.div`
     @media (max-width: 768px) {
         flex-direction: column;
         gap: 15px;
-        align-items: center;
         
         ul {
+            margin-left: 12px;
             margin-top: 10px;
             margin-bottom: 10px;
         }
@@ -81,9 +80,21 @@ export const PhoneItem = styled.div`
     align-items: center;
     gap: 10px;
 
+    @media (max-width: 768px) {
+        img {
+            width: 20px;
+            height: auto;
+        }
+    }
+
     @media (max-width: 480px) {
-        flex-direction: column;
+        display: flex;
         gap: 5px;
         text-align: center;
+
+        img {
+            width: 15px;
+            height: auto;
+        }
     }
 `
