@@ -6,6 +6,7 @@ import Servicos from "./components/servicos"
 import Localizacao from "./components/localizacao"
 import { GlobalStyles } from "./globalstyle"
 import Contato from "./components/contato"
+import Missao from "./components/missao"
 
 function App() {
 
@@ -13,10 +14,11 @@ function App() {
     <>
       <GlobalStyles />
       <Header />
-      <Span />
+      <Missao />
       <Servicos />
       <Localizacao />
       <Contato />
+      <Span />
       <Footer />
     </>
   )
