@@ -145,7 +145,7 @@ export const MobileMenu = styled.div`
     left: 0;
     width: 100%;
     background: white;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     padding: 20px 0;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -172,5 +172,40 @@ export const MobileLinks = styled.a`
     &:hover {
         background: ${cores.amarelo}20;
         color: ${cores.amarelo};
+    }
+`
+
+export const LogoButton = styled.button`
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    &:hover {
+        opacity: 0.8;
+        transform: scale(1.05);
+        transition: all 0.2s ease;
+    }
+    
+    &:active {
+        transform: scale(0.95);
+    }
+
+    img {
+        width: 50px;
+        height: 50px;
+        
+        @media (max-width: 768px) {
+            width: 40px;
+            height: 40px;
+        }
+        
+        @media (max-width: 480px) {
+            width: 35px;
+            height: 35px;
+        }
     }
 `

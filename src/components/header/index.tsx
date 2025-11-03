@@ -1,13 +1,24 @@
 import { useState } from 'react'
 import gear from '../../assets/gear.svg'
-import { Container, HeaderContent, Links, Titulo, TituloDestaque, HamburguerMenu, MobileLinks, MobileMenu } from './style'
+import { Container, HeaderContent, Links, Titulo, TituloDestaque, HamburguerMenu, MobileLinks, MobileMenu, LogoButton} from './style'
 
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    };
+
     return (
+        
         <Container>
             <HeaderContent>
-                <img src={gear} />
+                <LogoButton onClick={scrollToTop}>
+                    <img src={gear} />
+                </LogoButton>
                 <Titulo>Torneadora <TituloDestaque>Celso</TituloDestaque></Titulo>
             </HeaderContent>
             <div className="desktop-links">
